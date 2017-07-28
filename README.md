@@ -2,3 +2,9 @@
 *   快速排序——arithmetic/quicksort
 *   冒泡排序——arithmetic/bubblesort
 *   归并排序——arithmetic/mergesort
+# 布局练习
+*   Flex布局——layout/flex
+# 深拷贝和浅拷贝  
+*   深拷贝——copy/deep-copy.js
+# 设计模式
+*   发布订阅——design-patterns/pub-sub.js
