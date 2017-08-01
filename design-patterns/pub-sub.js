@@ -18,17 +18,23 @@ Observer.prototype={
         var arr=this.events[e],self=this;
         if(arr&&arr.length>0){
             arr.forEach(function(fn){
-                fn.apply(self,v);
+                if(typeof v=='array'){
+                    fn.apply(self,v);
+                }else{
+                    fn.call(self,v)
+                }
+                
             })
         }
     }
 }
 
 var obs=new Observer();
-obs.on('go',function(){
-    console.log(1)
+obs.on('go',function(n){
+    console.log('hello '+n)
 })
-obs.on('go',function(){
-    console.log(2)
+obs.on('go',function(n){
+    console.log('ok '+n)
 })
-obs.emit('go')
+obs.emit('go','leo')
+obs.emit('go',['leo','sue'])

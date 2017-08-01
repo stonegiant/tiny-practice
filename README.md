@@ -4,7 +4,11 @@
 *   归并排序——arithmetic/mergesort
 # 布局练习
 *   Flex布局——layout/flex
+*   外边距合并——layout/margin-collapsing
 # 深拷贝和浅拷贝  
 *   深拷贝——copy/deep-copy.js
 # 设计模式
 *   发布订阅——design-patterns/pub-sub.js
+# 字符串处理
+*   URL参数转JSON对象——str/parse-url.js
+*   数字千分符——str/thousand-separator.js
